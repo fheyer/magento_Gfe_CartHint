@@ -4,9 +4,10 @@ require 'app/code/core/Mage/Checkout/controllers/CartController.php';
 
 class Gfe_CartHint_CartController extends Mage_Checkout_CartController {
     public function indexAction() {
-        if ($this->_getQuote()->hasItems()) {
+        $offset = $this->parsefloat(Mage::getStoreConfig('carthint/settings/offset'));
+        
+        if (($offset > 0) && ($this->_getQuote()->hasItems())) {
             $sum = $this->_getQuote()->collectTotals()->getGrandTotal();
-            $offset = $this->parsefloat(Mage::getStoreConfig('carthint/settings/offset'));
 
             $h = Mage::helper('core');
 
