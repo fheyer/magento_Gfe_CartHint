@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<config>
+    <tabs>
+        <gfe translate="label">
+            <label>GFE Media GmbH</label>
+            <sort_order>508</sort_order>
+        </gfe>
+    </tabs>    
+    <sections>    
+        <carthint translate="label">
+            <label>Cart hints</label>
+            <tab>gfe</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>90</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <settings translate="label">  
+                    <label>Cart hints</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <offset translate="label">
+                            <label>Offset for free shipping</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>190</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </offset>                                                        
+                    </fields>
+                </settings>
+            </groups>
+        </carthint>               
+    </sections>
+</config>

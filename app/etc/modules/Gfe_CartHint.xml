@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Gfe_CartHint>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+            </depends>
+        </Gfe_CartHint>
+    </modules>
+</config>

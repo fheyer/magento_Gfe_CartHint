@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <gfe_carthint>
+            <version>0.1.0</version>
+        </gfe_carthint>
+    </modules>
+    <global>
+        <blocks>
+            <gfe_carthint>
+                <class>Gfe_Reorder_Block</class>
+            </gfe_carthint>
+        </blocks>
+    </global>
+    <frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <gfe_carthint before="Mage_Checkout">Gfe_CartHint</gfe_carthint>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>              
+        <translate>
+            <modules>
+                <gfe_carthint>
+                    <files>
+                        <default>Gfe_CartHint.csv</default>
+                    </files>
+                </gfe_carthint>
+            </modules>
+        </translate>
+    </frontend> 
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <carthint>
+                                            <title>Cart hints</title>
+                                        </carthint>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+        <translate>
+            <modules>
+                <gfe_carthint>
+                    <files>
+                        <default>Gfe_CartHint.csv</default>
+                    </files>
+                </gfe_carthint>
+            </modules>
+        </translate>        
+    </adminhtml>    
+    <default>
+        <carthint>
+            <settings>
+                <offset>50.00</offset>
+            </settings>
+        </carthint>
+    </default>    
+</config>
+
